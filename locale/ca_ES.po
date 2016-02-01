@@ -2,9 +2,9 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "model:ir.action,name:report_shipment_out_delivery_valued"
-msgid "Delivery Note Valued"
-msgstr "Albarà valorat"
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Boxes"
+msgstr "Caixes"
 
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Code"
@@ -27,12 +27,20 @@ msgid "Description"
 msgstr "Descripció"
 
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
-msgid "Quantity"
-msgstr "Quantitat"
+msgid "Precio"
+msgstr ""
 
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Price"
 msgstr "Preu"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Quantity"
+msgstr "Quantitat"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Shipment Address"
+msgstr "Adreça d'enviament"
 
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Source document"
@@ -50,6 +58,6 @@ msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Untaxed"
 msgstr "Base"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
-msgid "Shipment Address"
-msgstr "Adreça d'enviament"
+msgctxt "model:ir.action,name:report_shipment_out_delivery_valued"
+msgid "Delivery Note Valued"
+msgstr "Albarà valorat"

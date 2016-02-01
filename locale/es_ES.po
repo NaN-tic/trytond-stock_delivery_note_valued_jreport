@@ -2,9 +2,9 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "model:ir.action,name:report_shipment_out_delivery_valued"
-msgid "Delivery Note Valued"
-msgstr "Albarán valorado"
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Boxes"
+msgstr "Cajas"
 
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Code"
@@ -31,16 +31,24 @@ msgid "Expired"
 msgstr "Caducitat"
 
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
-msgid "Quantity"
-msgstr "Cantidad"
-
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Lot"
 msgstr "Lot"
 
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Precio"
+msgstr ""
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Price"
 msgstr "Precio"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Quantity"
+msgstr "Cantidad"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Shipment Address"
+msgstr "Dirección de envío"
 
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Source document"
@@ -58,6 +66,6 @@ msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Untaxed"
 msgstr "Base"
 
-msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
-msgid "Shipment Address"
-msgstr "Dirección de envío"
+msgctxt "model:ir.action,name:report_shipment_out_delivery_valued"
+msgid "Delivery Note Valued"
+msgstr "Albarán valorado"
