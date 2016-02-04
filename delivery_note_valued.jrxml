@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="delivery_note_valued" language="i18ngroovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c91ba985-840e-4136-8813-2033d76ec71b">
 	<property name="ireport.zoom" value="1.6105100000000012"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="23"/>
+	<property name="ireport.y" value="237"/>
 	<property name="TRYTON_RELATIONS" value="[&apos;outgoing_moves&apos;]"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["/"]]></defaultValueExpression>
@@ -136,8 +136,13 @@
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/untaxed_amount-untaxed_amount]]></fieldDescription>
 	</field>
 	<field name="packages" class="java.lang.Integer">
-		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/origin/package_quantity
-]]></fieldDescription>
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/origin/package_quantity]]></fieldDescription>
+	</field>
+	<field name="quantity_per_package" class="java.lang.Integer">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/origin/product_package/quantity]]></fieldDescription>
+	</field>
+	<field name="kit_parent_line" class="java.lang.Integer">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/origin/kit_parent_line/id]]></fieldDescription>
 	</field>
 	<variable name="L" class="java.util.Locale">
 		<variableExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></variableExpression>
@@ -364,6 +369,7 @@
 	</pageHeader>
 	<detail>
 		<band height="15" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{kit_parent_line} == null]]></printWhenExpression>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="82" y="2" width="253" height="12" uuid="848831dc-c427-42ec-880f-72bcd1cbc193"/>
 				<textElement>
@@ -408,7 +414,9 @@
 				<textFieldExpression><![CDATA[$F{unit_price}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
-				<reportElement x="339" y="2" width="50" height="12" uuid="0ba75804-2563-424f-bec3-fbaa12eca5a1"/>
+				<reportElement x="339" y="2" width="50" height="12" uuid="0ba75804-2563-424f-bec3-fbaa12eca5a1">
+					<printWhenExpression><![CDATA[$F{quantity_per_package} != 1]]></printWhenExpression>
+				</reportElement>
 				<textElement textAlignment="Right">
 					<font size="9"/>
 				</textElement>
