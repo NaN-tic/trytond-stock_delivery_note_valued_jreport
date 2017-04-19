@@ -56,16 +56,16 @@
 	<field name="reference-reference" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/reference-reference]]></fieldDescription>
 	</field>
-	<field name="shipment-code" class="java.lang.String">
-		<fieldDescription><![CDATA[/data/record/code-code]]></fieldDescription>
+	<field name="shipment-number" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/number-number]]></fieldDescription>
 	</field>
 	<field name="state-state" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/state-state]]></fieldDescription>
 	</field>
-	<field name="code-code" class="java.lang.String">
+	<field name="product-code" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/code-code]]></fieldDescription>
 	</field>
-	<field name="rec_name-rec_name" class="java.lang.String">
+	<field name="product-rec_name" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/product-product/rec_name-rec_name]]></fieldDescription>
 	</field>
 	<field name="quantity-quantity" class="java.lang.String">
@@ -182,12 +182,12 @@
 				</textField>
 				<textField>
 					<reportElement x="10" y="4" width="250" height="15" forecolor="#010101" uuid="322d34d8-b653-4849-8e5d-dcbc1321027b">
-						<printWhenExpression><![CDATA[$F{shipment-code} != '']]></printWhenExpression>
+						<printWhenExpression><![CDATA[$F{shipment-number} != '']]></printWhenExpression>
 					</reportElement>
 					<textElement textAlignment="Left">
 						<font size="11" isBold="true"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Delivery Note")+" Nº "+$F{shipment-code}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Delivery Note")+" Nº "+$F{shipment-number}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="10" y="21" width="250" height="12" uuid="123f8409-a763-484f-ad0b-65f6d67b822b">
@@ -357,7 +357,7 @@
 				<textElement>
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{rec_name-rec_name}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{product-rec_name}]]></textFieldExpression>
 			</textField>
 			<textField pattern="">
 				<reportElement x="93" y="2" width="50" height="12" uuid="c0ee0786-746b-4c0d-9976-8f8b35bc1464"/>
@@ -371,7 +371,7 @@
 				<textElement textAlignment="Left">
 					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{code-code}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{product-code}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="447" y="2" width="45" height="12" uuid="ec43897a-bf45-4166-a66f-cc89b2c9996e"/>
