@@ -150,14 +150,14 @@
 					<textFieldExpression><![CDATA[$F{full_name-full_name}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="146" y="138" width="148" height="12" uuid="d4ea5653-f41c-422f-acc1-ceada0793612"/>
+					<reportElement x="66" y="138" width="148" height="12" uuid="d4ea5653-f41c-422f-acc1-ceada0793612"/>
 					<textElement>
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Description")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="93" y="138" width="50" height="12" uuid="7d0f7e2b-3332-4f27-be98-a62091577018"/>
+					<reportElement x="13" y="138" width="50" height="12" uuid="7d0f7e2b-3332-4f27-be98-a62091577018"/>
 					<textElement textAlignment="Left">
 						<font size="9"/>
 					</textElement>
@@ -216,13 +216,6 @@
 						<font size="9"/>
 					</textElement>
 					<textFieldExpression><![CDATA[tr($V{L},"Source document")+": "+$F{origins-origins}]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="13" y="138" width="75" height="12" uuid="1cf94199-274e-4fb8-94b0-750a755e8e6a"/>
-					<textElement textAlignment="Left">
-						<font size="9"/>
-					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Code")]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="10" y="46" width="250" height="12" uuid="40160dc5-1170-46bb-9d13-35af190bd762">
@@ -353,25 +346,18 @@
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="146" y="2" width="305" height="12" uuid="848831dc-c427-42ec-880f-72bcd1cbc193"/>
+				<reportElement x="66" y="2" width="379" height="12" uuid="848831dc-c427-42ec-880f-72bcd1cbc193"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{product-rec_name}]]></textFieldExpression>
 			</textField>
 			<textField pattern="">
-				<reportElement x="93" y="2" width="50" height="12" uuid="c0ee0786-746b-4c0d-9976-8f8b35bc1464"/>
+				<reportElement x="13" y="2" width="50" height="12" uuid="c0ee0786-746b-4c0d-9976-8f8b35bc1464"/>
 				<textElement textAlignment="Left">
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{quantity-quantity} ? $F{company-shipment_qty} ? (int)Double.valueOf($F{quantity-quantity}.trim()).doubleValue() : Double.valueOf($F{quantity-quantity}.trim()).doubleValue() : '0']]></textFieldExpression>
-			</textField>
-			<textField pattern="#,##0.00;-#,##0.00">
-				<reportElement x="13" y="2" width="75" height="12" uuid="f5611945-7651-46a2-86bb-5081adf88d2f"/>
-				<textElement textAlignment="Left">
-					<font size="9"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{product-code}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="447" y="2" width="45" height="12" uuid="ec43897a-bf45-4166-a66f-cc89b2c9996e"/>
