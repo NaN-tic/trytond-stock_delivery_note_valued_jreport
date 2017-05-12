@@ -234,11 +234,11 @@
 					<textFieldExpression><![CDATA[tr($V{L},"Total")]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="447" y="138" width="45" height="12" uuid="72715637-b8ad-46a1-a1a9-c89fde4cbd27"/>
+					<reportElement x="416" y="138" width="72" height="12" uuid="72715637-b8ad-46a1-a1a9-c89fde4cbd27"/>
 					<textElement textAlignment="Left">
 						<font size="9"/>
 					</textElement>
-					<textFieldExpression><![CDATA[tr($V{L},"Untaxed")]]></textFieldExpression>
+					<textFieldExpression><![CDATA[tr($V{L},"Gross Price")]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupHeader>
@@ -346,7 +346,7 @@
 	<detail>
 		<band height="15" splitType="Stretch">
 			<textField isStretchWithOverflow="true">
-				<reportElement x="66" y="2" width="379" height="12" uuid="848831dc-c427-42ec-880f-72bcd1cbc193"/>
+				<reportElement x="66" y="2" width="350" height="12" uuid="848831dc-c427-42ec-880f-72bcd1cbc193"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
@@ -360,13 +360,13 @@
 				<textFieldExpression><![CDATA[$F{quantity-quantity} ? $F{company-shipment_qty} ? (int)Double.valueOf($F{quantity-quantity}.trim()).doubleValue() : Double.valueOf($F{quantity-quantity}.trim()).doubleValue() : '0']]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="447" y="2" width="45" height="12" uuid="ec43897a-bf45-4166-a66f-cc89b2c9996e"/>
-				<textFieldExpression><![CDATA[$F{move-untaxed_amount} ? $F{move-untaxed_amount} : '0']]></textFieldExpression>
+				<reportElement x="416" y="2" width="72" height="12" uuid="ec43897a-bf45-4166-a66f-cc89b2c9996e"/>
+				<textFieldExpression><![CDATA[$F{move-gross_unit_price} ? $F{move-gross_unit_price} : '0']]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="492" y="2" width="46" height="12" uuid="e930b2c8-b2f8-4ad1-85ec-a179e847dce7"/>
 				<textElement textAlignment="Right"/>
-				<textFieldExpression><![CDATA[$F{move-total_amount} ? $F{move-total_amount} : '0']]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{move-amount} ? $F{move-amount} : '0']]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
