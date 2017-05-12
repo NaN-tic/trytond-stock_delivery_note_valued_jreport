@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
@@ -21,6 +21,10 @@ msgstr "Albarà"
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Description"
 msgstr "Descripció"
+
+msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
+msgid "Gross Price"
+msgstr "Preu brut"
 
 msgctxt "jasper:stock.shipment.out.delivery_note_valued:"
 msgid "Quantity"
