@@ -131,6 +131,9 @@
 	<field name="move-total_amount" class="java.lang.Number">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/total_amount-total_amount]]></fieldDescription>
 	</field>
+	<field name="move-unit_price" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/unit_price-unit_price]]></fieldDescription>
+	</field>
 	<field name="move-untaxed_amount" class="java.lang.Number">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/untaxed_amount-untaxed_amount]]></fieldDescription>
 	</field>
@@ -367,11 +370,11 @@
 :
     ""]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField pattern="###0.0000">
 				<reportElement x="416" y="2" width="72" height="12" uuid="ec43897a-bf45-4166-a66f-cc89b2c9996e"/>
-				<textFieldExpression><![CDATA[$F{move-gross_unit_price} ? $F{move-gross_unit_price} : '0']]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{move-gross_unit_price} ? $F{move-gross_unit_price} : $F{move-unit_price}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField pattern="#,##0.00;-#,##0.00">
 				<reportElement x="492" y="2" width="46" height="12" uuid="e930b2c8-b2f8-4ad1-85ec-a179e847dce7"/>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA[$F{move-amount} ? $F{move-amount} : '0']]></textFieldExpression>
