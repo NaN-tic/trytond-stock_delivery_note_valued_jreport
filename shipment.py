@@ -2,14 +2,12 @@
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
 from trytond.pool import Pool
-from trytond.pool import PoolMeta
 from trytond.modules.jasper_reports.jasper import JasperReport
 
 __all__ = ['DeliveryNoteValued']
 
 
 class DeliveryNoteValued(JasperReport):
-    __metaclass__ = PoolMeta
     __name__ = 'stock.shipment.out.delivery_note_valued'
 
     @classmethod
