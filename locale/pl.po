@@ -1,0 +1,51 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Code"
+msgstr "Kod"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Customer Code"
+msgstr "Kod klienta"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Delivery Note"
+msgstr "Dowód dostawy"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Description"
+msgstr "Opis"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Gross Price"
+msgstr "Cena brutto"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Quantity"
+msgstr "Ilość"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Shipment Address"
+msgstr "Adres wysyłki"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Source document"
+msgstr "Źródło"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Tax"
+msgstr "Podatek"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Total"
+msgstr "Suma"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Untaxed"
+msgstr "Netto"

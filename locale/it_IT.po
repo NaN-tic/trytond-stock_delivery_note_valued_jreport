@@ -1,0 +1,51 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Code"
+msgstr "Codice"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Customer Code"
+msgstr "Codice Cliente"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Delivery Note"
+msgstr "Nota di Consegna"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Description"
+msgstr "Descrizione"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Gross Price"
+msgstr "Prezzo Netto"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Quantity"
+msgstr "Quantità"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Shipment Address"
+msgstr "Indirizzo di Consegna"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Source document"
+msgstr "Documento di Origine"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Tax"
+msgstr "Tassa"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Total"
+msgstr "Totale"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Untaxed"
+msgstr "Base Imponibile"
