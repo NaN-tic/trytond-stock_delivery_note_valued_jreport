@@ -1,0 +1,63 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.action,name:report_shipment_out_delivery_valued"
+msgid "Delivery Note Valued"
+msgstr "Bon de livraison estimé"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Code"
+msgstr "Code"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Customer Code"
+msgstr "Code client"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Date"
+msgstr "Date"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Delivery Note"
+msgstr "Bon de livraison"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Description"
+msgstr "Description"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Expired"
+msgstr "Caducitat"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Quantity"
+msgstr "Quantité"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Lot"
+msgstr "Lot"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Price"
+msgstr "Prix"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Source document"
+msgstr "Document source"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Tax"
+msgstr "Taxe"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Total"
+msgstr "Total"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Untaxed"
+msgstr "Base"
+
+msgctxt "report:stock.shipment.out.delivery_note_valued:"
+msgid "Shipment Address"
+msgstr "Dirección de envío"
