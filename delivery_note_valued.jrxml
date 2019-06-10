@@ -122,14 +122,14 @@
 	<field name="delivery_address-comment_shipment" class="java.lang.String">
 		<fieldDescription><![CDATA[/data/record/delivery_address-delivery_address/comment_shipment-comment_shipment]]></fieldDescription>
 	</field>
-	<field name="move-total_amount" class="java.lang.Number">
-		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/total_amount-total_amount]]></fieldDescription>
+	<field name="move-amount" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/amount]]></fieldDescription>
 	</field>
 	<field name="move-unit_price" class="java.lang.Number">
 		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/unit_price-unit_price]]></fieldDescription>
 	</field>
-	<field name="move-untaxed_amount" class="java.lang.Number">
-		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/untaxed_amount-untaxed_amount]]></fieldDescription>
+	<field name="move-gross_unit_price" class="java.lang.Number">
+		<fieldDescription><![CDATA[/data/record/outgoing_moves-outgoing_moves/gross_unit_price]]></fieldDescription>
 	</field>
 	<variable name="L" class="java.util.Locale">
 		<variableExpression><![CDATA[$F{customer-lang} != null && $F{customer-lang}.length() == 5 ? new Locale($F{customer-lang}) : ( $F{customer-lang} != null && $F{customer-lang}.length() == 2 ? new Locale($F{customer-lang}) : new Locale('en_US'))]]></variableExpression>
